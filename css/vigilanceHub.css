@@ -1,0 +1,41 @@
+.bg-dark-blue {
+    background-color: #000530;
+    color: white;
+}
+
+.navbar {
+    padding: 0% 1rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 25px;
+    font-family: 'Jersey 20', cursive;
+    color: white;
+}
+
+.navbar-brand {
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-item-left {
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-item-right {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link img {
+    margin-right: 2px;
+    height: 25px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.footer-text {
+    color: #A2F1FF;
+    font-family:monospace;
+    font-size: 12px;
+}
