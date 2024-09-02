@@ -1,0 +1,263 @@
+.bg-dark-blue {
+    background-color: #000530;
+    color: white;
+}
+
+.bg-grey {
+    background-color: #404040;
+    color: white;
+}
+
+.navbar {
+    padding: 0% 1rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+    /* width: 88%; */
+    /* This is the most accurate width */
+    width: 1335px;
+    max-width: 100%;
+    padding-top: 10px; padding-bottom: 10px;
+    background-color: #000530;
+    box-sizing: border-box;
+}
+
+.navbar-nav .nav-link {
+    font-size: 25px;
+    font-family: 'Jersey 20', cursive;
+    color: white;
+}
+
+.navbar-brand, .nav-item-left, .nav-item-right {
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-link img {
+    margin-right: 2px;
+    height: 25px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.footer-text {
+    color: #A2F1FF;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.password-req {
+    font-size: 10px;
+    color: #466F7B;
+    margin-top: 4px;
+    display: block;
+}
+
+
+/* CSS for register.html */
+.register-button {
+    background-color: purple; border-color: purple; 
+    width: 150px; 
+    height: 50px; 
+    font-family: 'Jersey 20', cursive; 
+    font-size: 25px;
+}
+
+.register-button:hover {
+    background-color: #500050; border-color: #500050;
+}
+
+
+/* CSS for login.html */
+.login-button {
+    background-color: #025400; border-color: #025400; 
+    width: 150px; 
+    height: 50px; 
+    font-family: 'Jersey 20', cursive; 
+    font-size: 25px;
+}
+
+.login-button:hover {
+    background-color: #023900; border-color: #023900;
+}
+
+
+/* CSS for training_menu.html */
+.training-container {
+    max-width: 1000px;
+}
+
+.quiz-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    font-family: 'Jersey 20';
+}
+
+.quiz-button .btn {
+    background-color: #0060FF; border-color: #0060FF;
+    width: 150px;
+}
+
+.quiz-button .btn:hover {
+    background-color: #7EAEFF; border-color: #7EAEFF;
+}
+
+.topic-icon {
+    position: relative;
+    width: 22%;
+    height: 0;
+    padding-bottom: 22%; /* Aspect ratio of 1:1 */
+    /* background-color: #f8f9fa; */
+    border: 1px solid grey;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* color: #fff; */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.topic-icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.topic-icon span {
+    font-family: Helvetica; font-size: 11px;
+    color: #FFD0F7;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    line-height: 1.2;
+}
+
+.topic-icon:hover span{
+    color: #FF90EB;
+}
+
+.topic-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+    z-index: 1;
+}
+
+
+/* CSS for training_page.html (Topics 1-8) */
+.menu-button {
+    position: absolute;
+    background-color: #C00000; border-color: #C00000;
+    left: calc(50% - 400px); /* align to the left of the PDF window */
+    /* top: 150px; */
+    top: 108px;
+    font-family: 'Jersey 20';
+}
+
+.menu-button:hover {
+    background-color: #810000; border-color: #810000;
+}
+
+.topic-quiz-button {
+    position: absolute;
+    background-color: #00B920; border-color: #00B920;
+    width: 100px;
+    left: calc(50% + 300px); /* align to the right of the PDF window */
+    /* top: 150px; */
+    top: 108px;
+    font-family: 'Jersey 20';
+}
+
+.topic-quiz-button:hover {
+    background-color: #025400; border-color: #025400;
+}
+
+.prev-topic h5, .next-topic h5{
+    position: absolute;
+    font-family: Candara; font-weight: bold; font-size: 16px;
+    color: #FF5F1F;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-topic h5:hover, .next-topic h5:hover {
+    color: #FFB700;
+}
+
+.prev-topic h5 {
+    left: calc(50% - 410px);
+    top: 150px;
+}
+
+.next-topic h5 {
+    left: calc(50% + 306px);
+    top: 150px;
+}
+
+.topic-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -22px;
+}
+
+.topic-list h5 {
+    margin: 10px;
+    color: white;
+}
+
+.topic-list h5 a {
+    color: #5DBD90;
+    text-decoration: none;
+    font-size: 15px; font-family: Candara; font-weight: bold;
+}
+
+.topic-list h5 a:hover {
+    color: #B8FFDE;
+}
+
+
+/* CSS for prep_preTrg and prep_postTrg HTML */
+.prep-message-container {
+    max-width: 1000px;
+}
+
+.prep-menu-button {
+    position: absolute;
+    background-color: #C00000; border-color: #C00000;
+    top: 137px;
+    font-family: 'Jersey 20';
+}
+
+.prep-menu-button:hover {
+    background-color: #810000; border-color: #810000;
+}
+
+.start-quiz-button {
+    background-color: #0060FF; border-color: #0060FF; 
+    width: 150px; 
+    height: 50px; 
+    font-family: 'Jersey 20', cursive; 
+    font-size: 25px;
+}
+
+.start-quiz-button:hover {
+    background-color: #7EAEFF; border-color: #7EAEFF;
+}
