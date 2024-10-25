@@ -15,11 +15,29 @@
     </style>
 </head>
 <body>
-    <img src="../public/images/401.jpg" alt="Centered Image">
+    <img src="/public/images/401.jpg" alt="Centered Image">
     <script>
         window.onload = function() {
-            alert("401 Unauthorized. Please log in.");
-            window.location.href = '../public/html/login.html';
+            const isSessionActive = localStorage.getItem('username') !== null; // check for active session
+            const reasonDenied = localStorage.getItem('reasonDenied');
+            
+            if (!isSessionActive) {
+                // Redirect to login page if no active session
+                alert("401 Unauthorized. Please log in.");
+                window.location.href = '/public/html/login.html';
+            } else if (reasonDenied === 'preTrainingIncomplete') {
+                // Redirect if pre-training is incomplete
+                alert("You need to complete the Pre-Training Quiz before accessing this content.");
+                window.location.href = 'training_menu.html';
+            } else if (reasonDenied === 'topicsIncomplete') {
+                // Redirect if all topics are not completed
+                alert("Complete all topic quizzes to unlock the Post-Training Quiz.");
+                window.location.href = 'training_menu.html';
+            } else {
+                // Default message for other unauthorized reasons
+                alert("401 Unauthorized. Please log in.");
+                window.location.href = '/public/html/login.html';
+            }
         };
     </script>
 </body>

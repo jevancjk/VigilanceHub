@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VigilanceHub</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/vigilanceHub.css">
+
+    <style>
+        .homepage-container, .about-container, .service-container {
+            max-width: 1000px;
+        }
+
+        body {
+            padding-top: 90px;
+        }
+    </style>
+</head>
+<body class="bg-dark-blue">
+    <div id="navbarContainer"></div>
+    <div id="homepage" class="container homepage-container mt-2">
+        <h1 class="text-center" style="font-family: monospace; font-weight: bold; color: cyan;">Welcome to VigilanceHub!</h1>
+        <p class="text-center">Your cybersecurity journey begins here!</p><br>
+        <div class="image-gallery">
+            <img src="/public/images/homepage/training.png">
+            <img src="/public/images/homepage/cybersecurity.jpg">
+            <img src="/public/images/homepage/cat.jpg">
+            <img src="/public/images/homepage/robot.jpg">
+        </div>
+        <br>
+        <div class="text-center">
+            <button id="homeRegisterBtn" class="btn btn-danger join-us-btn">Join us!</button>
+        </div>
+    </div>
+    <div id="about" class="container about-container body mt-2">
+        <br><br><br><br><br>
+        <h1 class="text-center" style="font-family: monospace; font-weight: bold;">About us</h1>
+        <p style="text-align: justify;">VigilanceHub is a platform dedicated to cybersecurity awareness. Launched in 2024, this all-in-one platform aims to enhance users' 
+            knowledge in the cybersecurity field by incorporating engaging training materials and quizzes for users of all ages, regardless of their amount of prior 
+            knowledge in cybersecurity.<br><br>
+            The idea of developing VigilanceHub was inspired from other various full-fledged existing training platforms that are widely used by various organisations. 
+            However, as some of these platforms require a paid subscription to use or only accessible if you are employed in such organisations, there is still a large
+            majority of people around the world who would benefit from a free and easy awareness training platform.<br><br>
+            As the cybersecurity landscape continues to grow, the developers of VigilanceHub affirmed the importance of educating users of all ages some basic cybersecurity 
+            concepts that are undeniably beneficial in this world dominated by technology. Thus, VigilanceHub was born, and continues to be an easily accessible awareness 
+            training platform that nurtures people in cybersecurity each day.
+        </p>
+    </div>
+    <div id="services" class="container service-container body mt-2">
+        <br><br><br><br><br>
+        <h1 class="text-center" style="font-family: monospace; font-weight: bold;">Services</h1>
+        <p style="text-align: justify;">VigilanceHub provides cybersecurity services in the form of:<br></p>
+        <ul>
+            <li>Robust training materials on different cybersecurity topics for people of all backgrounds</li>
+            <li>Quizzes to test users on their knowledge of studying the training materials</li>
+            <li>Tracking of users' quiz scores to recommend further revision where needed</li>
+            <li>A forum discussion page where users can share their thoughts on the training materials and other cybersecurity-related things</li>
+        </ul>
+        <br><br><br>
+        <h2 class="text-center" style="font-family: monospace; font-weight: bold;">Why should you join VigilanceHub?</h2>
+        <p style="text-align: justify;">VigilanceHub enhances your cybersecurity knowledge through engaging, accessible, and free training materials and quizzes.
+            Whether you're new to cybersecurity or looking to sharpen your skills, VigilanceHub offers valuable resources for all levels. With the services provided here, 
+            you'll easily grasp essential cybersecurity concepts while testing and improving your understanding. In addition, our active forum fosters a community where you 
+            can share insights and learn from others. In the ever-growing cybersecurity landscape, VigilanceHub equips you with the skills needed to stay safe and informed online.<br><br>
+        </p>
+        <p class="text-center" style="color: yellow;">So, what are you waiting for? Click the 'Register' button on the top-right and be a part of this vibrant community!</p>
+    </div>
+
+    <div id="footerContainer"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#navbarContainer").load("/misc_html/navbar_home.html");
+            $("#footerContainer").load("/misc_html/footer.html");
+        });
+
+        document.getElementById('homeRegisterBtn').addEventListener('click', function() {
+            window.location.href = 'register.html';
+        });
+    </script>
+</body>
+</html>

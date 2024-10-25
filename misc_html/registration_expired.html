@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Success</title>
+    <title>Registration Expired</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../public/css/vigilanceHub.css">
 
     <style>
-        .register-success-container {
+        .register-expired-container {
             max-width: 1000px;
         }
 
-        .goto-login-btn {
-            background-color: #0060FF; border-color: #0060FF;
-            width: 200px; height: 50px; 
+        .goto-register-btn {
+            background-color: #B36700; border-color: #B36700;
+            width: 220px; height: 50px; 
             font-family: 'Jersey 20'; font-size: 25px;
         }
 
-        .goto-login-btn:hover {
-            background-color: #7EAEFF; border-color: #7EAEFF;
+        .goto-register-btn:hover {
+            background-color: #D5A500; border-color: #D5A500;
         }
     </style>
 
 </head>
 <body class="bg-dark-blue">
-    <div class="container register-success-container mt-2">
+    <div class="container register-expired-container mt-2">
         <div class="text-center">
             <br><br><br>
-            <h4>You have successfully registered an accout with VigilanceHub!<br>Please click the button below to go to the login page.</h4>
+            <h4>Your confirmation link has expired!<br>Please go back to the Register page via the button below to re-register.</h4>
             <br>
             <div class="text-center">
-                <button id="gotoLoginBtn" class="btn btn-primary goto-login-btn">Go to Login Page</button>
+                <button id="gotoRegisterBtn" class="btn btn-primary goto-register-btn">Go to Register Page</button>
             </div>
         </div>
     </div>
@@ -46,8 +46,8 @@
         $(document).ready(function(){
             $("#footerContainer").load("footer.html");
 
-            document.getElementById('gotoLoginBtn').addEventListener('click', function() {
-                window.location.href = '../public/html/login.html';
+            document.getElementById('gotoRegisterBtn').addEventListener('click', function() {
+                window.location.href = '../public/html/register.html';
             });
         });
     </script>
