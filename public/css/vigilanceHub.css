@@ -1,36 +1,28 @@
-.bg-dark-blue {
-    background-color: #000530;
-    color: white;
-}
-
-.bg-grey {
-    background-color: #404040;
-    color: white;
+.web-theme {
+    background-color: #000530; color: white;
 }
 
 .navbar {
-    padding: 0% 1rem;
-    overflow: hidden;
     position: fixed;
     top: 0;
-    /* width: 100%; */
-    /* width: 88%; */
-    /* This is the most accurate width */
-    width: 1335px;
-    max-width: 100%;
-    padding-top: 10px; padding-bottom: 10px;
+    width: 100%;
+    padding-top: 5px; padding-bottom: 5px;
     background-color: #000530;
     box-sizing: border-box;
+    z-index: 100; /* bring navbar to front to avoid elements overlapping */
 }
 
 .navbar-nav .nav-link {
-    font-size: 25px;
-    font-family: 'Jersey 20', cursive;
+    font-size: 25px; font-family: 'Jersey 20';
     color: white;
 }
 
-.navbar-brand, .nav-item-left, .nav-item-right {
+.navbar-brand, .nav-item-left {
     margin-right: 30px;
+}
+
+.nav-item-right {
+    margin-left: 30px;
 }
 
 .navbar-nav .nav-link img {
@@ -42,12 +34,29 @@
     font-style: italic;
 }
 
-.footer-text {
-    color: #A2F1FF;
-    font-family: monospace;
-    font-size: 12px;
+.image-gallery {
+    width: 863px;
+    margin: auto;
+    background-color: #3C3C3C;
+    overflow: auto;
+    white-space: nowrap;
+}
+  
+.image-gallery img {
+    padding: 5px;
 }
 
+.join-us-btn {
+    font-family: monospace; font-size: 25px;
+    width: 150px; height: 50px;
+    background-color: #AC4900; border-color: #AC4900;
+}
+
+.join-us-btn:hover {
+    background-color: #622A00; border-color: #622A00;
+}
+
+/* CSS for register.html, login.html, forgot_password.html and reset_password.html */
 .password-req {
     font-size: 10px;
     color: #466F7B;
@@ -55,34 +64,197 @@
     display: block;
 }
 
-
-/* CSS for register.html */
 .register-button {
     background-color: purple; border-color: purple; 
-    width: 150px; 
-    height: 50px; 
-    font-family: 'Jersey 20', cursive; 
-    font-size: 25px;
+    width: 150px; height: 50px; 
+    font-family: 'Jersey 20'; font-size: 25px;
 }
 
 .register-button:hover {
     background-color: #500050; border-color: #500050;
 }
 
-
-/* CSS for login.html */
 .login-button {
     background-color: #025400; border-color: #025400; 
-    width: 150px; 
-    height: 50px; 
-    font-family: 'Jersey 20', cursive; 
-    font-size: 25px;
+    width: 150px; height: 50px; 
+    font-family: 'Jersey 20'; font-size: 25px;
 }
 
 .login-button:hover {
     background-color: #023900; border-color: #023900;
 }
 
+.confirm-email-btn, .confirm-reset-btn {
+    background-color: #0060FF; border-color: #0060FF;
+    width: 120px; height: 50px;
+    font-family: 'Jersey 20'; font-size: 25px;
+}
+
+.confirm-email-btn:hover, .confirm-reset-btn:hover {
+    background-color: #7EAEFF; border-color: #7EAEFF;
+}
+
+/* CSS for index_userLogin.html */
+.updates-container {
+    width: 500px;
+    margin: auto;
+}
+
+/* CSS for profile.html and edit_profile.html */
+.back-to-profile h5 {
+    position: absolute;
+    font-family: Candara; font-weight: bold; font-size: 18px;
+    color: #C00000;
+    left: calc(50% - 290px);
+    top: 130px;
+    cursor: pointer;
+}
+
+.back-to-profile h5:hover {
+    color: #810000;
+}
+
+.profile-card {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 120px; height: 120px;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    margin-right: 30px;
+    background-image: url('/public/images/avatars/default.png');
+    background-size: contain; background-position: center;
+    background-repeat: no-repeat; box-sizing: border-box;
+    border: 6px solid transparent;
+    /* object-fit: contain; */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h3 {
+    text-align: center;
+}
+
+.edit-profile-link {
+    text-align: center;
+}
+
+.edit-profile-link h5 {
+    font-family: 'Jersey 20'; font-weight: bold; font-size: 22px;
+    color: #707070;
+}
+
+.edit-profile-link h5:hover {
+    color: #A0A0A0;
+}
+
+.quiz-scores {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.quiz-scores table {
+    margin-top: -15px;
+    border-collapse: collapse;
+    background-color: #23788B; border: 2px solid #23448B;
+}
+
+.quiz-scores th, .quiz-scores td {
+    border: 2px solid #23448B;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.choose-avatar img, .default-icon {
+    width: 80px; height: 80px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    object-fit: contain;
+}
+
+.choose-avatar img.selected, .default-icon.selected {
+    border-color: #007bff;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.save-edit-btn {
+    width: 150px; height: 50px;
+    font-family: 'Jersey 20'; font-size: 20px;
+    background-color: #025400; border-color: #025400;
+}
+
+.save-edit-btn:hover {
+    background-color: #023900; border-color: #023900;
+}
+
+.delete-acc-link img, .delete-acc-link a {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.delete-acc-link a {
+    margin-top: 7px;
+}
+
+.delete-acc-link h5 {
+    font-family: monospace; font-weight: bold; font-size: 16px;
+    color: red;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.delete-acc-link h5:hover {
+    color: #810000;
+}
+
+/* CSS for forum.html and forum_post.html */
+.submit-post-btn, .submit-comment-btn {
+    font-family: 'Jersey 20'; font-size: 20px;
+    background-color: #990077; border-color: #990077;
+    width: 155px;
+}
+
+.submit-post-btn:hover, .submit-comment-btn:hover {
+    background-color: #DB00AA; border-color: #DB00AA;
+}
+
+.display-post {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* display only the first 2 lines */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.forum-link h5 {
+    font-family: Candara; font-weight: bold; font-size: 20px;
+    color: #C00000;
+    position: absolute;
+    cursor: pointer;
+}
+
+.forum-link h5:hover {
+    color: #810000;
+}
 
 /* CSS for training_menu.html */
 .training-container {
@@ -108,17 +280,14 @@
 
 .topic-icon {
     position: relative;
-    width: 22%;
-    height: 0;
+    width: 22%; height: 0;
     padding-bottom: 22%; /* Aspect ratio of 1:1 */
-    /* background-color: #f8f9fa; */
     border: 1px solid grey;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* color: #fff; */
     font-size: 18px;
     font-weight: bold;
 }
@@ -127,8 +296,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     object-fit: cover;
     z-index: 0;
 }
@@ -159,6 +327,9 @@
     z-index: 1;
 }
 
+.reminder-message-container {
+    align-items: center;
+}
 
 /* CSS for training_page.html (Topics 1-8) */
 .menu-button {
@@ -188,7 +359,7 @@
     background-color: #025400; border-color: #025400;
 }
 
-.prev-topic h5, .next-topic h5{
+.prev-topic h5, .next-topic h5 {
     position: absolute;
     font-family: Candara; font-weight: bold; font-size: 16px;
     color: #FF5F1F;
@@ -233,7 +404,6 @@
     color: #B8FFDE;
 }
 
-
 /* CSS for prep_preTrg and prep_postTrg HTML */
 .prep-message-container {
     max-width: 1000px;
@@ -252,12 +422,68 @@
 
 .start-quiz-button {
     background-color: #0060FF; border-color: #0060FF; 
-    width: 150px; 
-    height: 50px; 
-    font-family: 'Jersey 20', cursive; 
-    font-size: 25px;
+    width: 150px; height: 50px; 
+    font-family: 'Jersey 20'; font-size: 25px;
 }
 
 .start-quiz-button:hover {
+    background-color: #7EAEFF; border-color: #7EAEFF;
+}
+
+/* CSS for quiz_page.html */
+.menu-link h5 {
+    position: absolute;
+    font-family: Candara; font-weight: bold; font-size: 18px;
+    color: #C00000;
+    left: calc(50% - 290px);
+    top: 145px;
+    cursor: pointer;
+}
+
+.menu-link h5:hover {
+    color: #810000;
+}
+
+.question-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.question {
+    font-size: 20px;
+}
+
+.option-btn {
+    color: #BE4600; border: 1px solid #BE4600;
+    font-weight: 500; font-size: 18px;
+    width: 100%;
+    padding: 12px;
+    margin: 5px;
+    text-align: center;
+}
+
+.option-btn.correct {
+    background-color: #28A745; color: white;
+}
+
+.option-btn.incorrect {
+    background-color: #DC3545; color: white;
+}
+
+.option-btn:hover {
+    background-color: #BE4600;
+}
+
+.exit-quiz-btn {
+    background-color: #0060FF; border-color: #0060FF;
+    width: 120px; height: 50px;
+    font-family: 'Jersey 20'; font-size: 25px;
+    pointer-events: auto;
+}
+
+.exit-quiz-btn:hover {
     background-color: #7EAEFF; border-color: #7EAEFF;
 }
