@@ -10,16 +10,9 @@ VigilanceHub is a cybersecurity awareness training platform that caters to users
 1. Go to nodejs.org and download the Node.js LTS (Long Term Support) version.
 2. Once the installer is downloaded, run the executable/msi file and follow the installation instructions provided by the installer.
 
-All environment/PATH variables are added by default. Chocolatey, a Windows package manager will also be installed and Windows PowerShell will open. Do not touch anything in PowerShell, let everything install (may take about 15-30 minutes). When it is done, you may be asked to restart your computer. Do so.
+* All environment/PATH variables are added by default. Chocolatey, a Windows package manager will also be installed and Windows PowerShell will open. Do not touch anything in PowerShell, let everything install (may take about 15-30 minutes). When it is done, you may be asked to restart your computer. Do so.
 
-3. After installation, open a command prompt or terminal and enter the following commands to verify that Node.js and npm (Node Package Manager) are installed:
-```
-node -v
-```
-```
-npm -v
-```
-The output will just be a version number (e.g. 10.7.0).
+3. After installation, open a command prompt or terminal and enter the following commands to verify that Node.js and npm (Node Package Manager) are installed: ```node -v``` and ```npm -v```. The output will just be a version number (e.g. ```10.7.0```).
 
 ### Install Visual Studio Code and Live Server extension
 1. Download VSCode from https://code.visualstudio.com/download and select the operating system you are using. Run the executable file and follow the instructions. Accept the agreement by checking the radio button. In the next page you may check 'Create a desktop icon' if you wish. Leave the rest as default and install VSCode.
@@ -32,6 +25,7 @@ In the command line of the root folder, enter the command
 npm install express express-session express-my-sql-session body-parser mysql cors path bcrypt nodemailer axios csv-parser
 ```
 All packages will be added into ```package.json``` under ```dependencies```.
+
 To view the packages, run the command ```type package.json``` for Windows or ```cat package.json``` for Linux.
 
 ### Install MySQL Workbench
@@ -48,10 +42,7 @@ To run the backend, run this command in the root folder
 ```
 node src/app.js
 ```
-Command line will output
-```
-Server running on http://127.0.0.1:3000
-```
+Command line will output ```Server running on http://127.0.0.1:3000```.
 
 ### Miscellaneous steps
 To re-update the .exe file, run the command:
