@@ -113,7 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     .then(response => {
                         if (response.data.success) {
                             alert('Your account has been deleted successfully.\nWe are sad to see you go :(');
-                            window.location.href = '/public/html/index_home.html';
+                            // window.location.href = '/public/html/index_home.html';
+                            window.location.href = '/public/index.html';
                         } else {
                             alert('Error deleting account. Please try again.');
                         }

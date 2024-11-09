@@ -23,7 +23,7 @@
             <h4>Thank you for using VigilanceHub! We hope you had a bug-free cybersecurity learning experience.</h4>
             <br>
             <p id="countdown"><br></p>
-            <a href="../public/html/index_home.html">Return to homepage now</a>
+            <a href="../public/index.html">Return to homepage now</a>
         </div>
     </div>
 
@@ -43,7 +43,8 @@
                 updateTimer(secondsLeft);
                 if (secondsLeft === 0) {
                     clearInterval(timerInterval);
-                    window.location.href = "../public/html/index_home.html";
+                    // window.location.href = "../public/html/index_home.html";
+                    window.location.href = "../public/index.html";
                 }
             }, 1000);
         });
