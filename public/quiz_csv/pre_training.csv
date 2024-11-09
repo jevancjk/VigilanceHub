@@ -1,0 +1,21 @@
+question,optionA,optionB,optionC,optionD,correctAnswer
+"In cybersecurity, what does the 'C' in CIA stand for?",Control,Cybersecurity,Confidentiality,Compliance,C
+Which of the following is NOT a common type of malware?,Virus,Worm,Smishing,Trojan,C
+What is the primary purpose of phishing?,Provide guidelines for vulnerability testing,Steal sensitive information,Crash servers,Test network security,B
+"Which model is used to manage user access, permissions, and activity tracking in cybersecurity?",OSI Model,DDoS Model,AAA Model,SSL Model,C
+Which of the following is a best practice for creating strong passwords?,Using common words,Including personal information,Keeping passwords short so it is easy to remember,"Many characters which may include digits and symbols",D
+What does the agency 'NIST' stand for in cybersecurity?,National Institute of Secure Technology,National Institute of Standards and Technology,National Information Security Technology,National Information Systems Technology,B
+Which component of a URL indicates a secure connection?,https,www,http,.com,A
+What does the HTTP status code 404 indicate?,Not Found,Unauthorized Access,Internal Server Error,Bad Request,A
+What is the primary function of a firewall in network security?,To detect malware,To filter incoming and outgoing traffic,To encrypt data,To provide DNS services,B
+Which of the following is an example of two-factor authentication (2FA)?,Using a password and a PIN,Using a password and a fingerprint scan,Using two passwords,Using a password and a username,B
+Which layer of the OSI Model is responsible for routing data between devices?,Application,Data Link,Network,Physical,C
+Which IP address format is commonly used for IPv4?,4 octets separated by colons,6 octets separated by colons,4 octets separated by periods,6 octets separated by periods,C
+What is the primary goal of data loss prevention (DLP)?,To prevent data breaches,To monitor network traffic,To backup data,To manage passwords,A
+Which of the following is a common action taken to protect data?,Backing up data when compromised,Sharing passwords,Only sharing with a friend or family member,Encrypting sensitive information,D
+Which incident response stage involves managing and mitigating the impact of an incident?,Post-Incident Activity,Detection and Analysis,"Containment, Eradication, and Recovery",Preparation,C
+What is the main advantage of using multi-factor authentication (MFA)?,It simplifies the login process,It improves user experience,It enhances security by requiring more than one form of verification,It stores your passwords so that you can retrieve them when needed,C
+Which port number is commonly used for HTTP?,21,443,53,80,D
+Which legislation focuses on data protection and privacy within the European Union?,HIPAA,SOX,GDPR,FERPA,C
+What is the first step in the NIST Incident Response Life Cycle?,Detection and Analysis,Preparation,"Containment, Eradication, and Recovery",Post-Incident Activity,B
+What does a MAC address uniquely identify?,Network device,Network,IP address,Website,A

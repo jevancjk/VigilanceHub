@@ -33,14 +33,14 @@
         </div>
         <br>
         <div class="text-center">
-            <button id="homeRegisterBtn" class="btn btn-danger join-us-btn">Join us!</button>
+            <button id="joinUsBtn" class="btn btn-danger join-us-btn">Join us!</button>
         </div>
     </div>
     <div id="about" class="container about-container body mt-2">
         <br><br><hr><br><br>
         <h1 class="text-center" style="font-family: monospace; font-weight: bold;">About us</h1>
-        <p style="text-align: justify;">VigilanceHub is a platform dedicated to cybersecurity awareness. Launched in 2024, this all-in-one platform aims to enhance users' 
-            knowledge in the cybersecurity field by incorporating engaging training materials and quizzes for users of all ages, regardless of their amount of prior 
+        <p style="text-align: justify;">VigilanceHub is a web application dedicated to cybersecurity awareness. Launched in 2024, this all-in-one platform aims to enhance 
+            users' knowledge in the cybersecurity field by incorporating engaging training materials and quizzes for users of all ages, regardless of their amount of prior 
             knowledge in cybersecurity.<br><br>
             The idea of developing VigilanceHub was inspired from other various full-fledged existing training platforms that are widely used by various organisations. 
             However, as some of these platforms require a paid subscription to use or only accessible if you are employed in such organisations, there is still a large
@@ -80,7 +80,7 @@
             $("#footerContainer").load("/misc_html/footer.html");
         });
 
-        document.getElementById('homeRegisterBtn').addEventListener('click', function() {
+        document.getElementById('joinUsBtn').addEventListener('click', function() {
             window.location.href = 'register.html';
         });
     </script>

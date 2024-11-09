@@ -1,0 +1,11 @@
+question,optionA,optionB,optionC,optionD,correctAnswer
+What does CIA stand for in the CIA Triad model?,"Confidentiality, Integrity, Authentication","Confidentiality, Integrity, Availability","Cybersecurity, Information, Authentication","Cybersecurity, Integrity, Authorization",B
+Which component in the AAA model represents identifying a user trying to access a system?,Authentication,Availability,Accounting,Authorization,A
+What is the primary focus of cybersecurity fundamentals?,Protecting physical assets,Ensuring privacy in online communication,Safeguarding digital information and systems,Preventing natural disasters,C
+What is one goal of the CIA Triad?,To ensure data is always available,To protect against all types of cyber threats,"To maintain trustworthiness, reliability, and accessibility of data",To authenticate users before granting access,C
+Which of the following is NOT a component of the AAA Model?,Accounting,Authorization,Authentication,Availability,D
+"A bank requires workers to go through turnstiles, fingerprint scanner and a security guard to access the vault. What access control measure has been implemented?",Rule-based Access Control,Segregation of Duties,Defense in Depth,Role-based Access Control,C
+Which of the following is a good way to mitigate vulnerabilities in a system?,Install multiple antivirus software,Use state-of-the-art firewalls,Ignore cybersecurity threats,Update software and patches regularly,D
+What does the Integrity component of the CIA Triad refer to?,Ensuring data is accurate and reliable,Protecting data from unauthorized access,Ensuring data is always available,Encrypting sensitive information,A
+Why is cybersecurity important for businesses?,It ensures employees have access to social media,It protects sensitive data and prevents financial losses,It increases internet speed,It eliminates the need for antivirus software,B
+What is a good objective of cybersecurity education and training?,To teach individuals how to hack into systems ethically,To increase awareness of potential cyber threats,To encourage employees to understand as many policies as possible,To ensure all software is bug-free,B

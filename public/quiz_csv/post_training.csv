@@ -1,0 +1,31 @@
+question,optionA,optionB,optionC,optionD,correctAnswer
+What does the HTTPS protocol add to HTTP to enhance security?,Speed,Encryption,Redundancy,Scalability,B
+Which of the following is an example of a phishing attack?,Sending fake emails to get personal information,Installing malware on a device,"Brute-forcing passwords, including strong ones",Encrypting sensitive data without users’ knowledge,A
+"According to recommended NIST guidelines, how often should passwords be changed?",Anytime if the user wishes,Every 60 days,Only when compromised,Every 90 days,C
+Which type of malware replicates itself to spread to other computers?,Virus,Spyware,Trojan,Worm,D
+What is the primary goal of the CIA Triad's Integrity component?,Ensuring data availability,Restricting data access,Maintaining data accuracy,Encrypting data,C
+Which OSI layer is responsible for routing packets across networks?,Layer 1,Layer 3,Layer 5,Layer 7,B
+What is the primary purpose of data encryption?,Data backup,Data retrieval,Data protection,Data analysis,C
+What does MAC address filtering help prevent in a network?,Network congestion,Unauthorized device access,Data redundancy,Signal interference,B
+Which stage of the NIST Incident Response Life Cycle involves identifying vulnerabilities and preparing for potential incidents?,Preparation,Detection and Analysis,"Containment, Eradication and Recovery",Post-Incident Activity,A
+What does the term 'CRUD' stand for in web security?,"Create, Read, Update, Delete","Create, Retrieve, Update, Delete","Connect, Read, Update, Delete","Create, Read, Upload, Download",A
+Which of the following is a key function of an Intrusion Detection System (IDS)?,Blocking unauthorized access,Encrypting network traffic,Monitoring and alerting on suspicious activity,Managing network configurations,C
+Which type of attack exploits vulnerabilities in web applications to inject malicious code?,Phishing,SQL Injection,DDoS Attack,Man-in-the-Middle,B
+What is the purpose of the 'Detection and Analysis' phase in incident response?,Responding to the incident,Restoring normal operations,Analyzing alerts and logs for potential incidents,Establishing plans and resources for potential incidents,C
+Which protocol is commonly used for secure remote access to network devices?,FTP,RDP,HTTPS,SSH,D
+Which type of attack involves overwhelming a network with excessive traffic?,Phishing,Man-in-the-Middle,DDoS,SQL Injection,C
+Which OSI layer deals with the presentation and translation of data?,Layer 2,Layer 4,Layer 6,Layer 7,C
+"In access control measures, what does DAC stand for?",Dynamic Access Control,Distributed Access Control,Delegated Access Control,Discretionary Access Control,D
+What is the primary function of a firewall in network security?,Filtering incoming and outgoing traffic,Encrypting data,Monitoring network performance,Managing network addresses,A
+Which of the following ensures legal compliance for safeguarding personal information?,Data Encryption Policy,Data Backup Strategy,Data Protection Legislation,Data Analysis Procedures,C
+What does Two-Factor Authentication (2FA) enhance?,Data redundancy,User security,Data compression,Network speed,B
+Which of the following best describes a Zero-Day Exploit?,An attack that occurs before a new software release is released,An attack that targets vulnerabilities unknown to the software vendor,A malware that activates after zero days of infection,A phishing attack that occurs immediately,B
+What is a common method for preventing data loss?,Using weak passwords,Disabling firewalls,Regularly backing up data,Ignoring security patches,C
+What is the main goal of network monitoring?,Increasing network speed,Detecting and responding to network issues,Reducing network size to increase bandwidth,Encrypting network data,B
+Which of the following describes the 'Post-Incident Activity' phase in incident response?,Initiating incident response,Containing the incident,Reviewing and learning from the incident,Identifying the incident,C
+Which HTTP status code represents the status ‘Bad Gateway’?,503,501,504,502,D
+Why are IP addresses important in network security?,It encrypts data,It identifies devices on a network,It monitors network speed,It blocks unauthorized access,B
+Which of the following is NOT a component of a URL?,Protocol,Domain name,Port number,MAC address,D
+What is the primary benefit of using encryption for data protection?,Speeding up data access,Reducing storage costs,Protecting data confidentiality,Enhancing network performance,C
+What is a common indicator of a phishing attempt?,Unsolicited email asking for personal information,Explicit content sent by your colleague,Email links to unfamiliar websites,Email from an old classmate asking to meet up,A
+Which of the following is a key consideration in developing a Business Continuity Plan (BCP)?,Creating strong passwords,Maintaining operations during disruptions,Increasing network bandwidth,Reducing employee training costs,B

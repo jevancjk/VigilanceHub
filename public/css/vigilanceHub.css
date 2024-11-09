@@ -34,6 +34,7 @@
     font-style: italic;
 }
 
+/* CSS for index_home.html */
 .image-gallery {
     width: 863px;
     margin: auto;
@@ -257,10 +258,6 @@
 }
 
 /* CSS for training_menu.html */
-.training-container {
-    max-width: 1000px;
-}
-
 .quiz-button {
     display: flex;
     justify-content: center;
@@ -288,8 +285,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 18px; font-weight: bold;
 }
 
 .topic-icon img {
@@ -321,9 +317,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* make image more dull */
     z-index: 1;
 }
 
@@ -335,9 +330,8 @@
 .menu-button {
     position: absolute;
     background-color: #C00000; border-color: #C00000;
-    left: calc(50% - 400px); /* align to the left of the PDF window */
-    /* top: 150px; */
-    top: 108px;
+    left: calc(50% - 400px); /* align to 'Prev Topic' link */
+    top: 116px;
     font-family: 'Jersey 20';
 }
 
@@ -349,9 +343,8 @@
     position: absolute;
     background-color: #00B920; border-color: #00B920;
     width: 100px;
-    left: calc(50% + 300px); /* align to the right of the PDF window */
-    /* top: 150px; */
-    top: 108px;
+    left: calc(50% + 300px); /* align to 'Next Topic' link */
+    top: 116px;
     font-family: 'Jersey 20';
 }
 
@@ -372,13 +365,13 @@
 }
 
 .prev-topic h5 {
-    left: calc(50% - 410px);
-    top: 150px;
+    left: calc(50% - 410px); /* align to menu-button */
+    top: 158px;
 }
 
 .next-topic h5 {
-    left: calc(50% + 306px);
-    top: 150px;
+    left: calc(50% + 306px); /* align to topic-quiz-button */
+    top: 158px;
 }
 
 .topic-list {

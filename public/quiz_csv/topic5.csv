@@ -1,0 +1,11 @@
+question,optionA,optionB,optionC,optionD,correctAnswer
+What is one way to identify a secure website?,It has a long URL,It displays a lock icon in the address bar,It has many pop-up ads,It is difficult to navigate,B
+Which of the following is NOT a safe web browsing practice?,Clicking on suspicious links,Avoid downloading files from unknown sources,Using secure passwords for online accounts,Keeping web browsers and security software up to date,A
+What does ‘HTTPS’ stand for in a website URL?,Hypertext Transfer Protocol Secure,Hypertext Transfer Protocol Standard,Hypertext Transfer Platform Security,Hypertext Transfer Protocol System,A
+What is a potential risk of visiting unsecured websites?,Slow internet speed,Increased risk of malware infection,Improved system performance,Enhanced cybersecurity awareness,B
+What is the HTTP status code for ‘Moved Permanently’?,200,404,102,301,D
+Which component of a URL often begins with a question mark?,Scheme,Port,Parameters,Anchor,C
+What should you do if you encounter a website with suspicious content or behavior?,Click on all the links to explore further,Close the browser immediately,Share the website with friends and family,Enter personal information to investigate,B
+Bob is accessing an online PDF of a research paper. What HTTP method was executed?,PUT,DELETE,POST,GET,D
+What is the name of the HTTP status code 500?,Not Found,Internal Server Error,Bad Gateway,Forbidden,B
+Which of these protocols/port numbers utilizes both TCP and UDP?,SSH / 22,Telnet / 23,DNS / 53,TFTP / 69,C

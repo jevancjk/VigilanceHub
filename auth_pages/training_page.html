@@ -13,7 +13,7 @@
 
     <style>
         body {
-            padding-top: 107px;
+            padding-top: 115px;
         }
     </style>
 </head>
@@ -41,13 +41,14 @@
             <a id="nextTopic" href="#"><h5>Next Topic ></h5></a>
         </div>
         <button id="topicQuizButton" class="btn btn-danger mb-3 topic-quiz-button"></button>
-        <object id="topicPdf" class="pdf" width="800" height="497"></object>
+        <object id="topicPdf" class="pdf" width="1000" height="610"></object>
     </div>
 
     <div id="footerContainer"></div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/training.js"></script>
     <script>
         $(document).ready(function(){
             $("#navbarContainer").load("../misc_html/navbar_userLogin.html");
@@ -68,16 +69,6 @@
                 window.history.replaceState(null, null, `?topicNo=${topicNo}`);
             }
 
-            // const topics = [
-            //     { num: 1, title: "Introduction to Cybersecurity", pdf: "../topics/Training Slides/Topic 1 - Introduction to Cybersecurity.pdf" },
-            //     { num: 2, title: "Understanding Cyber Threats", pdf: "../topics/Training Slides/Topic 2 - Understanding Cyber Threats.pdf" },
-            //     { num: 3, title: "Password Security and Authentication", pdf: "../topics/Training Slides/Topic 3 - Password Security and Authentication.pdf" },
-            //     { num: 4, title: "Malware Detection and Prevention", pdf: "../topics/Training Slides/Topic 4 - Malware Detection and Prevention.pdf" },
-            //     { num: 5, title: "Web Security", pdf: "../topics/Training Slides/Topic 5 - Web Security.pdf" },
-            //     { num: 6, title: "Network Security", pdf: "../topics/Training Slides/Topic 6 - Network Security.pdf" },
-            //     { num: 7, title: "Data Protection Fundamentals", pdf: "../topics/Training Slides/Topic 7 - Data Protection Fundamentals.pdf" },
-            //     { num: 8, title: "Incident Response Fundamentals", pdf: "../topics/Training Slides/Topic 8 - Incident Response Fundamentals.pdf" }
-            // ];
             const topics = [
                 { num: 1, title: "Introduction to Cybersecurity", pdf: "topics/Topic 1 - Introduction to Cybersecurity.pdf" },
                 { num: 2, title: "Understanding Cyber Threats", pdf: "topics/Topic 2 - Understanding Cyber Threats.pdf" },

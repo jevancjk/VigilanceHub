@@ -1,0 +1,11 @@
+question,optionA,optionB,optionC,optionD,correctAnswer
+Which statement best describes malware?,A type of antivirus software,A malicious software,A type of password manager,A secure web browsing practice,B
+Which of the following is NOT a type of malware?,Virus,Deepfake,Ransomware,Trojan,B
+What is the purpose of a honeypot in malware detection?,Lure attackers into a vulnerable system to detect attacks early,Provide additional computing resources for legitimate users,Encrypt sensitive data to prevent unauthorized access,Offer free web hosting services to attract more users,A
+The main way that malware infects a computer system is through…,Physical damage,Software vulnerabilities,Antivirus software,Regular software updates,B
+What is the primary goal of malware creators?,To fight against cybersecurity awareness,To protect computer systems from cyber threats,To gain unauthorized access to systems or damage data,To provide free software,C
+What is one way to protect yourself from malware?,Ignore software updates as they could still be malicious,Avoid using a computer for your work,Only share passwords with friends and family,Install and update antivirus software regularly,D
+"In cybersecurity, what is a trojan?",A type of antivirus software,A malicious program disguised as legitimate software,A malicious program that captures user’s keystrokes without their consent,A form of social engineering attack,B
+What is the main purpose of antivirus software?,To inform the user whenever there is a malware executing on the system,To prevent malware infections and remove existing malware from the system,To make computers run faster,To provide unlimited internet access to users,B
+What is a characteristic of ransomware?,It encrypts data and the attacker demands payment for decryption,It helps improve system performance,It spreads rapidly and can execute payloads to affected systems,It is easy to remove from infected systems,A
+Which of the following actions should you take if you suspect your computer is infected with malware?,Ignore the suspicion and continue using the computer as usual,Share the suspicion with friends and family,Install more software to fix the issue,Immediately disconnect from the internet and seek professional assistance,D

@@ -1,0 +1,11 @@
+question,optionA,optionB,optionC,optionD,correctAnswer
+What is the purpose of incident response procedures?,To mitigate the damage caused by cyber threats,To detect and respond to cybersecurity incidents efficiently,To ignore cybersecurity incidents and hope they go away on their own,To report cybersecurity incidents to the media,B
+Who should be notified first when a cybersecurity incident occurs in an organization?,Social media platforms,Law enforcement agencies,Incident response team,Friends and family,C
+What is the purpose of containment measures during incident response?,Escalate the incident to higher management,Isolate the affected systems or networks,Share incident details with friends,Delete all data related to the incident,B
+Which of the three response plans mentioned often takes the longest to complete?,BCP,DRP,IRP,All take around the same time,A
+What is the role of communication protocols in incident response?,Facilitate clear and timely communication among stakeholders,Share incident details with unauthorized individuals,Showcase good incident response efforts to IT auditors,Hide incident details from relevant authorities,A
+Who is responsible for documenting incident details during the response process?,Incident response team leader,Senior management,Any individuals involved in the response effort,External cybersecurity consultants,C
+What is the purpose of post-incident analysis?,To ignore the incident and move on,To point fingers at accountable parties,To document incident details to share with competitors,To improve future incident response procedures,D
+What is the most important thing to include in a disaster recovery plan?,Technical steps for mitigating future disasters,Communication protocols,Procedures for data backup and restoration,A list of potential scapegoats for the incident,C
+How often should incident response plans be tested and updated?,"Regularly, to ensure they remain effective and up to date",Every 365 days,Only after a cybersecurity incident occurs,After a cybersecurity awareness training session,A
+What is the importance of a call tree?,Store contact information of all employees,Disseminate information and instructions during an emergency,For employees to raise up work issues with colleagues to senior management,To manage the scheduling of routine meetings,B

@@ -18,23 +18,23 @@
     <img src="/public/images/401.jpg" alt="Centered Image">
     <script>
         window.onload = function() {
-            const isSessionActive = localStorage.getItem('username') !== null; // check for active session
+            const activeSession = localStorage.getItem('username') !== null;
             const reasonDenied = localStorage.getItem('reasonDenied');
             
-            if (!isSessionActive) {
-                // Redirect to login page if no active session
+            if (!activeSession) {
+                // Redirect to login page if non-auth user tries to access auth pages
                 alert("401 Unauthorized. Please log in.");
                 window.location.href = '/public/html/login.html';
             } else if (reasonDenied === 'preTrainingIncomplete') {
-                // Redirect if pre-training is incomplete
-                alert("You need to complete the Pre-Training Quiz before accessing this content.");
-                window.location.href = 'training_menu.html';
+                // pre_training not attempted
+                alert("Complete the Pre-Training Quiz before accessing this content.");
+                window.location.href = '/auth_pages/training_menu.html';
             } else if (reasonDenied === 'topicsIncomplete') {
-                // Redirect if all topics are not completed
+                // not all topic quizzes were attempted
                 alert("Complete all topic quizzes to unlock the Post-Training Quiz.");
-                window.location.href = 'training_menu.html';
+                window.location.href = '/auth_pages/training_menu.html';
             } else {
-                // Default message for other unauthorized reasons
+                // Default for other unauthorized reasons
                 alert("401 Unauthorized. Please log in.");
                 window.location.href = '/public/html/login.html';
             }
