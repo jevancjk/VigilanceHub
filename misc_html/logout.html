@@ -6,8 +6,8 @@
     <title>Logout Transition Page</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/vigilanceHub.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/vigilanceHub.css">
 
     <style>
         .logout-container {
@@ -23,7 +23,7 @@
             <h4>Thank you for using VigilanceHub! We hope you had a bug-free cybersecurity learning experience.</h4>
             <br>
             <p id="countdown"><br></p>
-            <a href="../public/index.html">Return to homepage now</a>
+            <a href="/public/index.html">Return to homepage now</a>
         </div>
     </div>
 
@@ -44,7 +44,7 @@
                 if (secondsLeft === 0) {
                     clearInterval(timerInterval);
                     // window.location.href = "../public/html/index_home.html";
-                    window.location.href = "../public/index.html";
+                    window.location.href = "/public/index.html";
                 }
             }, 1000);
         });
