@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VigilanceHub</title>
 
-    <script src="../public/js/checkAuth.js" defer></script>
+    <script src="/public/js/checkAuth.js" defer></script>
     <script src="http://127.0.0.1:3000/js/axios.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/vigilanceHub.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/vigilanceHub.css">
 
     <style>
         .login-homepage-container {
@@ -55,14 +55,14 @@
 
     <div id="footerContainer"></div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/jquery-3.7.1.min.js"></script>
     <script src="/public/js/index_userLogin.js"></script>
     <script src="/public/js/forum.js"></script>
     <script>
         $(document).ready(function(){
-            $("#navbarContainer").load("../misc_html/navbar_userLogin.html");
-            $("#footerContainer").load("../misc_html/footer.html");
+            $("#navbarContainer").load("/misc_html/navbar_userLogin.html");
+            $("#footerContainer").load("/misc_html/footer.html");
 
             // show the user's username in index_userLogin.html once they log in
             const username = localStorage.getItem('username');
