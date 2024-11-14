@@ -1,11 +1,11 @@
 /* BACKEND app.js ROUTES LINE GUIDE (to nearest ten) (UPDATE if new routes are added)
 Connect to database, SMTP email transporter, Create session: 40-70
-Run the backend, Check authentication: 70-100
+Run the backend, Check authentication: 70-100 
 Register, Email confirmation: 100-210
-Login, Forgot/Reset password, Logout: 210-350
+Login, Forgot/Reset password, Logout: 210-340
 Profile, Edit Profile, Delete account: 350-630
-Forum posts/comments functions: 640-710
-Quiz functions: 720-870
+Forum posts/comments functions: 630-710
+Quiz/Score functions: 710-870
 */
 
 const express = require('express');
@@ -30,7 +30,6 @@ const corsSession = {
 };
 
 app.use(cors(corsSession));
-
 app.use(bodyParser.json());
 
 // for static files from /public

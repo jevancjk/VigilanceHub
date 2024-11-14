@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     loginStatus.textContent = "Login success";
                     loginStatus.style.color = "#3BE825";
                     setTimeout(() => {
-                        window.location.href = "../../auth_pages/index_userLogin.html";
+                        window.location.href = "/auth_pages/index_userLogin.html";
                     }, 1000);
                 } else {
                     // Display specific message depending on either incorrect username/password or unconfirmed email
