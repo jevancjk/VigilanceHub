@@ -29,6 +29,9 @@
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" name="username" required>
+                <small class="form-text username-req"> 
+                    (must be between 5 and 20 characters long and cannot include spaces or special characters)
+                </small>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
@@ -63,6 +66,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="/public/js/jquery-3.7.1.min.js"></script>
     <script src="/public/js/register.js"></script>
+    <script src="/public/js/validation.js"></script>
     <script>
         $(document).ready(function(){
             $("#navbarContainer").load("/misc_html/navbar_home.html");

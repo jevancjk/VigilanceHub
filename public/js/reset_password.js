@@ -64,13 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         gotoLoginBtn.addEventListener('click', () => {
-            window.location.href = '../public/html/login.html';
+            window.location.href = '/public/html/login.html';
         });
-    }
-
-    function validatePassword(pw) {
-        // the regex value checks for at least 1 lowercase, 1 uppercase, 1 digit, 1 special character and min. 8 characters
-        const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;
-        return regex.test(pw);
     }
 });

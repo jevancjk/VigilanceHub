@@ -58,7 +58,7 @@
 }
 
 /* CSS for register.html, login.html, forgot_password.html and reset_password.html */
-.password-req {
+.username-req, .password-req {
     font-size: 10px;
     color: #466F7B;
     margin-top: 4px;
