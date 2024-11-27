@@ -1,6 +1,4 @@
 # VigilanceHub
-This is a repository for ICT4001 - Capstone Project.
-
 VigilanceHub is a cybersecurity awareness training platform that caters to users of all backgrounds. It integrates engaging training topics, quizzes and a discussion forum for users to chat with each other. Fundamental topics such as phishing awareness, password security and data protection are some of the areas covered in the training materials.
 
 ## Setting Up
