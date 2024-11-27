@@ -22,7 +22,7 @@ VigilanceHub is a cybersecurity awareness training platform that caters to users
 ### Install packages via npm
 In the command line of the root folder, enter the command
 ```
-npm install express express-session express-my-sql-session body-parser mysql cors path bcrypt nodemailer axios csv-parser
+npm install express express-session express-mysql-session body-parser mysql cors path bcrypt nodemailer axios csv-parser
 ```
 All packages will be added into ```package.json``` under ```dependencies```.
 
