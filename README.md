@@ -28,6 +28,59 @@ To view the packages, run the command ```type package.json``` for Windows or ```
 
 ### Install MySQL Workbench
 1. Download MySQL Workbench from https://dev.mysql.com/downloads/workbench/ and follow the instructions.
+2. If you are unable to connect to the MySQL server, here are some helpful links: https://www.youtube.com/watch?v=nCghoQcRbFI, https://stackoverflow.com/questions/7864276/cannot-connect-to-database-server-mysql-workbench.
+
+For the creation of tables, run these SQL commands (you may edit the variable names to your preference):
+```users``` table
+```
+CREATE TABLE users (
+    userID INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(45) UNIQUE,
+    email VARCHAR(255),
+    password VARCHAR(255),
+    avatar VARCHAR(255),
+    emailConfirmed TINYINT(1),
+    confirmationToken VARCHAR(255),
+    tokenExpiry DATETIME,
+    pre_training TINYINT,
+    topic1 TINYINT,
+    topic2 TINYINT,
+    topic3 TINYINT,
+    topic4 TINYINT,
+    topic5 TINYINT,
+    topic6 TINYINT,
+    topic7 TINYINT,
+    topic8 TINYINT,
+    post_training TINYINT
+)
+```
+```posts``` table
+```
+CREATE TABLE posts (
+    postID INT AUTO_INCREMENT PRIMARY KEY,
+    userID INT,  -- Foreign key to users table
+    username VARCHAR(45),  -- Foreign key to users table
+    postTitle VARCHAR(255),
+    postText TEXT,
+    postDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_userID_posts FOREIGN KEY (userID) REFERENCES users(userID),
+    CONSTRAINT fk_username_posts FOREIGN KEY (username) REFERENCES users(username)
+)
+```
+```comments``` table
+```
+CREATE TABLE comments (
+    commentID INT AUTO_INCREMENT PRIMARY KEY,
+    postID INT,  -- Foreign key to posts table
+    userID INT,  -- Foreign key to users table
+    username VARCHAR(45),  -- Foreign key to users table
+    commentContent TEXT,
+    commentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_postID_comments FOREIGN KEY (postID) REFERENCES posts(postID),
+    CONSTRAINT fk_userID_comments FOREIGN KEY (userID) REFERENCES users(userID),
+    CONSTRAINT fk_username_comments FOREIGN KEY (username) REFERENCES users(username)
+)
+```
 
 ### Run frontend and backend
 VigilanceHub runs on a web server on a Node.js application, with the frontend and backend running on ports 5500 and 3000 respectively.
